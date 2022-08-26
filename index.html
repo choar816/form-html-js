@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://url_to_make_request" method="post">
+        <p>
+            <label for="image">image</label>
+            <input id="image" name="image" type="file" >
+        </p>
+        <p>
+            <label for="product_name">product_name</label>
+            <input id="product_name" name="product_name" />
+        </p>
+        <p>
+            <label for="price">price</label>
+            <input id="price" name="price" />
+        </p>
+        <fieldset>
+            <legend>shipping_method</legend>
+            <div>
+                <input type="radio" id="delivery" name="shipping_method" value="DELIVERY" checked />
+                <label for="delivery">택배</label>
+            </div>
+            <div>
+                <input type="radio" id="parcel" name="shipping_method" value="PARCEL"/>
+                <label for="parcel">직접</label>
+            </div>
+        </fieldset>
+        <p>
+            <label for="shipping_fee">shipping_fee</label>
+            <input id="shipping_fee" name="shipping_fee" />
+        </p>
+        <p>
+            <label for="stock">stock</label>
+            <input id="stock" name="stock" />
+        </p>
+        <p>
+            <label for="products_info">products_info</label>
+            <input id="products_info" name="products_info" />
+        </p>
+        <input type="hidden" name="token" value="you should directly add token value here" />
+        <input type="submit" id="submit" />
+    </form>
+</body>
+</html>
